@@ -48,4 +48,3 @@ conda activate ezTrack
 ```bash
 conda deactivate
 ```
-# zf_adhd
