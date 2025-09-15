@@ -1,0 +1,4 @@
+# Ignore input and output
+input/*/*.mkv
+input/*.mkv
+output/*
