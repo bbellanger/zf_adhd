@@ -6,8 +6,16 @@ import numpy as np
 import pandas as pd
 import LocationTracking_Functions_standalone as lt
 
-# Set the folder as an argument
-parser = argparse.ArgumentParser(description="Track the animal in videos from a given folder.")
+# Define a folder_list to loop through
+folder_list = []
+directory_path = "./input"
+
+for item in os.listdir(directory_path):
+    item_path = os.path.join(directory_path, item)
+    if os.path.isdir(item_path):
+        folder_list.append(item)
+
+print(f"Tracking videos from the following folders: {folder_list}")
 
 # Tracking parameters
 ## Define video parameters in a for loop instead

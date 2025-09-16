@@ -34,7 +34,8 @@ def save_cropped_video(video_dict):
     # Open original video
     cap = cv2.VideoCapture(input_path)
     if not cap.isOpened():
-        raise ValueError(f"Cannot open video: {input_path}")
+        print(f"Cannot open video: {input_path}. Skipping.")
+        return  # Exit early to skip this video
 
     # Video properties
     fps = cap.get(cv2.CAP_PROP_FPS)
