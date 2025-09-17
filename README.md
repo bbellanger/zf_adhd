@@ -48,3 +48,19 @@ conda activate ezTrack
 ```bash
 conda deactivate
 ```
+
+## Slurm
+
+Make sure the folder structure exist for every line of the video_id.csv file.
+
+```bash
+mkdir -p logs/
+```
+
+Submit the job to Rivanna using Slurm
+
+```bash
+sbatch scripts/SubmitAllJobs.slurm
+```
+
+
