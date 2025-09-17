@@ -82,7 +82,7 @@ fi
 
 # Remove the original video
 echo "Removing the original, uncropped video: {param_a}${param_b}.mkv"
-rm "${param_a}${param_b}.mkv"
+#rm "${param_a}${param_b}.mkv"
 
 # --- Tracking analysis on the video ---
 echo "--- Running tracking analysis on the corresponding folder ---"
