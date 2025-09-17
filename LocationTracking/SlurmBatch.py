@@ -1,4 +1,4 @@
-# This script runs a tracking analysis on videos from individual folders in ./input/batch/
+# This script runs a tracking analysis videos conainted in folder (argument)
 
 # Import necessary packages
 import os

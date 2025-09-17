@@ -1,4 +1,4 @@
-# This script runs a tracking analysis on videos from individual folders in ./input/batch/
+# This script runs a tracking analysis on videos from individual folders in ./input/
 
 # Import necessary packages
 import os
@@ -8,7 +8,7 @@ import LocationTracking_Functions_standalone as lt
 
 # Define a folder_list to loop through
 folder_list = []
-directory_path = "./input"
+directory_path = "./input/"
 
 for item in os.listdir(directory_path):
     item_path = os.path.join(directory_path, item)
@@ -21,7 +21,7 @@ print(f"Tracking videos from the following folders: {folder_list}")
 ## Define video parameters in a for loop instead
 for folder in folder_list :
     video_dict = {
-        'dpath' : f"./input/{folder}",
+        'dpath' : f"./input/batch_test/{folder}",
         'ftype' : 'mkv',
         'start' : 36000,                      # Starting at 10 minutes, assuming 60 frames/sec
         'end' : 160000,                       # Ending at 55 minutes, assuming 60 frames/sec
