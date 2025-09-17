@@ -21,7 +21,7 @@ folder = args.folder
 # Tracking parameters
 ## Define video parameters in a for loop instead
 video_dict = {
-    'dpath' : f"./input/{folder}",
+    'dpath' : f"{folder}",
     'ftype' : 'mkv',
     'start' : 36000,                      # Starting at 10 minutes, assuming 60 frames/sec
     'end' : 160000,                       # Ending at 55 minutes, assuming 60 frames/sec
