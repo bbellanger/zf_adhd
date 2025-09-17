@@ -13,18 +13,21 @@ module load anaconda
 # --- Read the right line from the CSV ---
 line=$(sed -n "${SLURM_ARRAY_TASK_ID}p" tables/video_id.csv)
 
-# --- Parse CSV line ---
-IFS=',' read -r video_path timestamp video_filename context treatment new_name <<< "$line"
+# --- Parse the CSV line ---
+IFS=',' read -r id timestamp _ _ _ _ <<< "$line"
 
-# --- Set full video path ---
-video_path="input/${id}/"
+# --- Construct video path ---
+video_path="./input/${id}/"
 
-# --- Debug output ---
+# --- Use timestamp as filename (quoted), id as new name ---
+video_filename="$timestamp"
+new_name="$id"
+
+# --- Debug info ---
 echo "Processing video:"
-echo "- ID:           $new_name"
-echo "- Path:         $video_path"
-echo "- File:         $video_filename"
-echo "- New name:     $new_name"
+echo "- ID (new name):    $new_name"
+echo "- Folder path:      $video_path"
+echo "- Video filename:   $video_filename"
 
-# --- Run the actual processing script ---
+# --- Run SlurmBash.sh with quoted filename ---
 bash scripts/SlurmBash.sh -a "$video_path" -b "$video_filename" -c "$new_name"
