@@ -1,4 +1,4 @@
 # ignore the input, build and log files
-input/
+input/*.mkv
 logfiles/
 build/*/

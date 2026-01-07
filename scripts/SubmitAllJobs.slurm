@@ -2,9 +2,9 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=3
 #SBATCH --mem=32000
-#SBATCH -t 01:00:00
+#SBATCH -t 02:00:00
 #SBATCH -o logfiles/ezTrack_%a.log
-#SBATCH --array 1-1
+#SBATCH --array 1-25
 #SBATCH -p standard
 #SBATCH -A melizalab
 
