@@ -2,6 +2,7 @@
 input/*.mkv
 logfiles/*
 build/*
+tables/*
 
 # Useless notebook
 ./notebooks/Untitled.ipynb
