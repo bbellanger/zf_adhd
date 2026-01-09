@@ -7,5 +7,6 @@ tables/*.csv
 
 # Useless notebook
 ./notebooks/Untitled.ipynb
-
-
+.ipynb_checkpoints
+*/.ipynb_checkpoints
+*/*/.ipynb_checkpoints
