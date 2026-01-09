@@ -1,4 +1,11 @@
 # ignore the input, build and log files
 input/*.mkv
 logfiles/
-build/*/
+build/*
+output/*
+tables/*.csv
+
+# Useless notebook
+./notebooks/Untitled.ipynb
+
+
