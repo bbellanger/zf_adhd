@@ -193,7 +193,13 @@ source ~/.bashrc
 
 ## R
 
-- 📈 R-based plotting and statistical analysis scripts in progress.
+You will need a version of R installed as well as tidyverse packages for running the provided R scripts. To run the script and generate all the plots:
+
+```bash
+Rscript ./R/generate_plot.R
+```
+
+Notebooks provided in `./notebooks/` provide a comprehenssive walkthrough the `generate_plot.R` script.
 
 ---
 
