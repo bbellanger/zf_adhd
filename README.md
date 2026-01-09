@@ -191,19 +191,9 @@ source ~/.bashrc
 
 ---
 
-## Future Development
+## R
 
-### In Progress
-
-- 📈 R-based plotting and statistical analysis scripts
-- 📋 Automated quality control checks
-- 🔄 Integration with additional tracking algorithms
-
-### Planned Features
-
-- Support for freezing behavior analysis
-- Interactive visualization dashboard
-- Automated report generation
+- 📈 R-based plotting and statistical analysis scripts in progress.
 
 ---
 
