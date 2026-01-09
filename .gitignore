@@ -1,12 +1,20 @@
 # ignore the input, build and log files
 input/*.mkv
-logfiles/
+logfiles/*
 build/*
-output/*
-tables/*.csv
 
 # Useless notebook
 ./notebooks/Untitled.ipynb
 .ipynb_checkpoints
 */.ipynb_checkpoints
 */*/.ipynb_checkpoints
+
+# Ignore R plots
+Rplots.pdf
+output/distance_travelled/*
+output/path_travelled/*
+output/mastersheet.csv
+
+# Ignore Location Output data
+build/LocationOutputs/*
+
