@@ -1,6 +1,6 @@
 # ZF_ADHD
 
-Automated zebrafish behavioral video tracking pipeline using ezTrack and SLURM for parallel processing.
+Automated zebra finch behavioral video tracking pipeline using ezTrack and SLURM for parallel processing.
 
 ## Overview
 
